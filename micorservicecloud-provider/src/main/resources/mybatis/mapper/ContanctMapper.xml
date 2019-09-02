@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zhengganwen.springcloud.mapper.ContactMapper">
+  <sql id="column"> id,userid,uname,uphone,relation,intime</sql>
+
+  <resultMap id="BaseResultMap" type="com.zhengganwen.springcloud.entity.Contact">
+    <result column="id" jdbcType="VARCHAR" property="id"/>
+  </resultMap>
+
+  <select id="findAll"   resultType="com.zhengganwen.springcloud.entity.Contact" >
+
+    SELECT  <include refid="column"/>
+    FROM  contact
+  </select>
+
+</mapper>
