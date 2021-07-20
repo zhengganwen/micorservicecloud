@@ -10,7 +10,9 @@ import java.util.Date;
  */
 
 public class Contact implements Serializable {
+    //id
     private String id;
+    //绑定用户id
     private String  userid;
     private String uname;
     private String uphone;
