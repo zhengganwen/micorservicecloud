@@ -14,9 +14,13 @@ public class Contact implements Serializable {
     private String id;
     //绑定用户id
     private String  userid;
+    //用户名字
     private String uname;
+    //用户手机
     private String uphone;
+    //用户地址
     private String relation;
+    //初始化时间
     private Date intime;
 
     public String getId() {
